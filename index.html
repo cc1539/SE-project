@@ -27,10 +27,25 @@
 	  
 		//alert("welcome to the zone");
 		
+		var palette = ["red","green","blue"];
+		var pal_index = 0;
+		
+		setInterval(function(){
+			var mh = document.getElementById("main_header");
+			mh.style.color = palette[pal_index%palette.length];
+			pal_index++;
+		},200);
+		
 	  </script>
+	  
 	</head>
 	<body>
 		<div style="position:fixed; z-index:-1;">
+		<div id="main_header">
+			<h1 style="font-family:comic sans ms;">
+				welcome to the zone
+			</h1>
+			</div>
 			<img src="assets/park.png">
 			<div>
 				<button>click here to park</button>
