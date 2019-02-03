@@ -42,18 +42,15 @@ class Part {
 }
 
 var parts = [];
-
-/*
 var bgm;
 
 function preload() {
   bgm = loadSound('assets/ontheDANK.mp3');
 }
-*/
 
 function setup() {
   createCanvas(window.innerWidth,window.innerHeight);
-  //bgm.play();
+  bgm.play();
 }
 
 function keyPressed() {
@@ -84,13 +81,16 @@ function mousePressed() {
 }
 
 function draw() {
+	
   background(0);
   
   // apply collisions between all particles
-  for(var i=0;i<parts.length;i++) {
-  for(var j=i+1;j<parts.length;j++) {
-    parts[i].interact(parts[j]);
-  }
+  for(var t=0;t<10;t++) {
+    for(var i=0;i<parts.length;i++) {
+    for(var j=i+1;j<parts.length;j++) {
+      parts[i].interact(parts[j]);
+    }
+    }
   }
   
   // draw all particles
