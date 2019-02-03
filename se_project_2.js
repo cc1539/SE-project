@@ -17,7 +17,7 @@ class Part {
   draw() {
     var diameter = this.radius*2;
     noStroke();
-    fill(255);
+    fill(0);
     ellipse(this.x,this.y,diameter,diameter);
   }
   
@@ -50,9 +50,7 @@ function preload() {
 }
 
 function setup() {
-	
   createCanvas(window.innerWidth,window.innerHeight);
-  
   bgm.play();
 }
 
@@ -86,8 +84,8 @@ function mousePressed() {
 }
 
 function draw() {
-	
-  background(0);
+  
+  clear();
   
   // apply collisions between all particles
   for(var t=0;t<10;t++) {
