@@ -46,12 +46,12 @@ var mic;
 var bgm;
 
 function preload() {
-  bgm = loadSound('assets/ontheDANK.mp3');
+  //bgm = loadSound('assets/ontheDANK.mp3');
 }
 
 function setup() {
   createCanvas(window.innerWidth,window.innerHeight);
-  bgm.play();
+  //bgm.play();
 }
 
 function keyPressed() {
