@@ -88,7 +88,7 @@ function draw() {
   clear();
   
   // apply collisions between all particles
-  for(var t=0;t<10;t++) {
+  for(var t=0;t<4;t++) {
     for(var i=0;i<parts.length;i++) {
     for(var j=i+1;j<parts.length;j++) {
       parts[i].interact(parts[j]);
