@@ -42,6 +42,7 @@ class Part {
 }
 
 var parts = [];
+var mic;
 var bgm;
 
 function preload() {
@@ -49,11 +50,14 @@ function preload() {
 }
 
 function setup() {
+	
   createCanvas(window.innerWidth,window.innerHeight);
+  
   bgm.play();
 }
 
 function keyPressed() {
+  getAudioContext().resume();
   switch(key) {
     case 'n': {
       // add a part
@@ -72,6 +76,7 @@ function keyPressed() {
 }
 
 function mousePressed() {
+  getAudioContext().resume();
   parts.push(new Part(
     mouseX,
     mouseY,
