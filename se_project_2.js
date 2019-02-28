@@ -110,8 +110,13 @@ function draw() {
     
     // confine parts to the canvas
     var radius = parts[i].radius;
-    parts[i].x = min(max(parts[i].x,radius),width-radius);
-    parts[i].y = min(max(parts[i].y,radius),height-radius);
+	var damp = 0.9;
+	var vx = parts[i].x-parts[i].px;
+	var vy = parts[i].y-parts[i].py;
+	if(parts[i].x<radius||parts[i].x>width -radius){parts[i].x=(parts[i].x<radius?radius:(width -radius))*2-parts[i].x;parts[i].px=parts[i].x+vx*damp;}
+	if(parts[i].y<radius||parts[i].y>height-radius){parts[i].y=(parts[i].y<radius?radius:(height-radius))*2-parts[i].y;parts[i].py=parts[i].y+vy*damp;}
+    //parts[i].x = min(max(parts[i].x,radius),width-radius);
+    //parts[i].y = min(max(parts[i].y,radius),height-radius);
     
   }
   
