@@ -1,0 +1,229 @@
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@font-face {
+	font-family: 'industry thin';
+	src: URL('../assets/fonts/industry/Industry Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'industry bold';
+	src: URL('../assets/fonts/industry/Industry Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'industry light';
+	src: URL('../assets/fonts/industry/Industry Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'open sans';
+	src: URL('../assets/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'open sans bold';
+	src: URL('../assets/fonts/opensans/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'open sans light';
+	src: URL('../assets/fonts/opensans/OpenSans-Light.ttf') format('truetype');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'open sans';
+}
+
+html, body {
+	width: 100%;
+	height: 0px;
+}
+
+form > input[type="submit"], button {
+	display: block;
+	position: relative;
+	left: calc(50% - 125px);
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 20px;
+	width: 250px;
+	font-family: 'industry bold';
+	margin-top: 20px;
+	background-color: white;
+}
+
+#header {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	background-color: #6666FF;
+}
+
+#header > #top-color {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	background-color: darkblue;
+}
+
+#header > .link {
+	transition: background-color ease 0.2s;
+	transition: color ease 0.2s;
+	position: relative;
+	float: right;
+	padding: 25px;
+	margin: 25px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	right: 10px;
+	font-size: 20px;
+	border-radius: 50px;
+	color: white;
+}
+
+#header > #logo {
+	position: relative;
+	background-color: darkblue;
+	color: white;
+	border-radius: 20px;
+	width: auto;
+	left: 5px;
+	float: left;
+	font-size: 36px;
+	margin: 25px;
+	margin-top: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	font-family: 'industry bold';
+	-webkit-text-stroke: 1px b;
+}
+
+#header > .link:hover {
+	transition: background-color ease 0.2s;
+	background-color: black;
+	cursor: pointer;
+}
+
+#header > .subtext {
+	letter-spacing: 2px;
+	position: relative;
+	font-size: 20px;
+	font-style: italic;
+	float: left;
+	color: #AAAAFF;
+	margin: 15px;
+	margin-left: 5px;
+	top: 7px;
+	font-family: 'industry bold';
+}
+
+#user-features > .intro {
+	position: relative;
+	top: calc(50vh - 100px);
+	text-align: center;
+}
+
+#search-bar {
+	--width: 700px;
+	position: relative;
+	width: calc(var(--width));
+	height: 80px;
+	background-color: #6666FF;
+	border-radius: 0 0 20px 20px;
+	left: calc(50% - var(--width) / 2);
+	z-index: 1;
+}
+
+#search-bar form {
+	width: 100%;
+	height: 100%;
+}
+
+#search-bar input {
+	--border-width: 20px;
+	position: absolute;
+	border: 0;
+	width: calc(100% - var(--border-width) * 2 - 20px);
+	height: calc(100% - var(--border-width));
+	left: calc(var(--border-width));
+	border-radius: 0 0 10px 10px;
+	padding-left: 20px;
+	font-size: 18px;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+	background-color: black;
+}
+
+#user-features, #about, #plans, #app-links, #footer {
+	position: relative;
+	top: -80px;
+	left: 0;
+	background-color: white;
+	padding: 50px;
+	max-height: 200vh;
+	width: calc(100% - 100px);
+	display: inline-block;
+}
+
+#user-features {
+	min-height: calc(100vh - 100px);
+}
+
+#about, #app-links {
+	background-color: #EEEEFF;
+}
+
+#return-to-top {
+	border-radius: 100%;
+	background-color: darkblue;
+	color: white;
+	position: fixed;
+	right: 20px;
+	bottom: -70px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#return-to-top > p {
+	position: relative;
+	text-align: center;
+	top: calc(50% - 28px);
+	font-size: 72px;
+	font-family: 'industry thin';
+}
+
+input[type="time"],input[type="date"] {
+	margin-bottom: 10px;
+	border-radius: 0 20px 20px 0;
+	height: 20px;
+	padding: 4px;
+}
+
+input[type="date"] {
+	border-radius: 0 1px 1px 0;
+}
+
+.status {
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}

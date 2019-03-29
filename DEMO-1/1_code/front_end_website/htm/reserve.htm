@@ -1,0 +1,21 @@
+
+<div id="reservation-zone">
+	<p class="info">You have chosen to reserve spot #?? at "?????? Parking Lot 2B".</p>
+	<br>
+	<form action="php/reserve.php">
+		<input type="number" min="0" name="reservation_spot" hidden>
+		<b>Reservation Start&#9;</b>
+		<br>
+		<input type="date" name="start_date" required>
+		<input type="time" name="start_time" required>
+		<br><br>
+		<b>Reservation End&#9;</b>
+		<br>
+		<input type="date" name="end_date" required>
+		<input type="time" name="end_time" required>
+		<br>
+		<input type="submit" value="Submit Reservation">
+	</form>
+	<button class="cancel" onclick="$(this).parent().slideUp(500).queue(function(){$(this).remove();});">Cancel</button>
+	<p class="status"></p>
+</div>

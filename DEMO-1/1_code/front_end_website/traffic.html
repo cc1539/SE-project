@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Traffic Manipulation</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			
+			
+		</script>
+		
+		<style type="text/css">
+		
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#container {
+				display: table;
+				width: 100%;
+				height: 100%;
+				padding: 50px;
+			}
+			
+			#container > div {
+				display: table-cell;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="container">
+			<div>
+				<p>Get traffic information</p>
+				<form action="php/traffic.php" method="GET">
+					<input type="submit">
+				</form>
+			</div>
+			<div>
+				<p>Set traffic information</p>
+				<form action="php/traffic.php" method="POST">
+					<label>Activity:</label><input type="text" name="activity"><br>
+					<label>Parking Spot:</label><input type="text" name="spot"><br>
+					<label>License Plate Number:</label><input type="text" name="lpnum">
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>

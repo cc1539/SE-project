@@ -1,0 +1,61 @@
+
+#footer {
+	min-height: 400px;
+	height: 400px;
+}
+
+#user-features .greeting {
+	font-size: 36px;
+	margin: 20px;
+	margin-left: 0px;
+	font-family: 'open sans light';
+	background-color: #EEEEFF;
+	text-align: center;
+	z-index: 100;
+}
+
+#user-features h1 {
+	margin-bottom: 20px;
+}
+
+#user-features div {
+	background-color: #EEEEFF;
+	padding: 30px;
+	margin-right: 23px;
+}
+
+#user-features > #account-info {
+	height: 548px;
+}
+
+#account-info input[type="text"] {
+	margin-bottom: 10px;
+	border-radius: 0 20px 20px 0;
+	height: 10px;
+	width: calc(100% - 20px);
+	padding: 10px;
+}
+
+.pair-container {
+	display: table;
+}
+
+.pair-container > div {
+	display: table-cell;
+}
+
+#virtual-map {
+	min-width: 700px;
+	min-height: 480px;
+}
+
+#reservation-info {
+	position: relative;
+	height: 100px;
+	min-width: 1070px;
+}
+
+#reservation-zone {
+	min-width: 1070px;
+}
+

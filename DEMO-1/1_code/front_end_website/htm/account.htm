@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="css/uf_styles.css">
+
+<p class="greeting noselect">Welcome, testaccount123</p>
+
+<div class="pair-container">
+
+	<div id="virtual-map">
+		<h1 class="noselect">Virtual Map</h1>
+		<p>Loading...</p>
+		<p class="status"></p>
+	</div>
+
+	<div id="account-info">
+		<h1 class="noselect">Account Information</h1>
+		<form action="php/saveinfo.php" method="POST">
+			<input type="submit" value="Save Changes">
+		</form>
+		<p class="status"></p>
+	</div>
+	
+</div>
+
+<div id="reservation-info">
+	<p class="status">You do not currently have any reservations. Click a spot on the virtual map above to reserve a spot!</p>
+	<button class="cancel" onclick="clearReservation();" style="display:none;">Cancel Reservation</button>
+</div>
