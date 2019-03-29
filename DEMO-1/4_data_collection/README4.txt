@@ -1,1 +1,1 @@
-
+There is no data collection.
