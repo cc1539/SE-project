@@ -1,0 +1,30 @@
+// The following credential is the username-password combo which is used to login into backend software
+Username: SEproject
+Password: seproject2020
+
+// To access the following database, please go on remotemysql.com, and hit log in button on the top right coner of the // website. Use the following credential infomation to access database.
+
+Garage DB
+
+Username: Vneao4rF2A
+
+Password: r1Futn7r47
+
+Database Name: Vneao4rF2A
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+Back end software DB
+
+Username: lwmU9Ib3M7
+
+Password: cnTrfKQqso
+
+Database Name: lwmU9Ib3M7
+
+Server: remotemysql.com
+
+Port: 3306
