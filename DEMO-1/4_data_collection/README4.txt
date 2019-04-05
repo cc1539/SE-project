@@ -1,1 +1,1 @@
-There is no data collection.
+There are currently no data collection scripts.
