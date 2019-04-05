@@ -1,1 +1,1 @@
-There is no integration testing.
+There is currently no integration testing.
