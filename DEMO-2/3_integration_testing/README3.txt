@@ -1,1 +1,1 @@
-﻿There is currently no integration testing.
+We manually tested the integration of our subsystems.
