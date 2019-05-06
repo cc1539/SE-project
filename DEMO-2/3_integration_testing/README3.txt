@@ -1,1 +1,1 @@
-We manually tested the integration of our subsystems.
+We manually tested the integration of our project's subsystems.
