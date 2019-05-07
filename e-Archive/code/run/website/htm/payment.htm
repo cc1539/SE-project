@@ -1,0 +1,29 @@
+<div id="login-div">
+
+	<link rel="stylesheet" type="text/css" href="css/form_styles.css">
+	
+	<div class="overlay"></div>
+	<div class="input-frame">
+		
+		<div id="top-color"></div>
+		
+		<div id="payin">
+			<h4>Payment</h4>
+			<form action="php/payment.php">
+				
+				<input type="text" name="ccnum" placeholder="Credit Card Number" required><br>
+				<input type="text" name="ccv" placeholder="CCV" required><br>
+				
+				<input type="radio" name="ctype" value="0" required>Visa<br>
+				<input type="radio" name="ctype" value="1" required>Mastercard<br>
+				<input type="radio" name="ctype" value="2" required>American Express<br>
+				
+				<input type="submit" value="Finish Payment">
+			</form>
+			<br>
+			<p class="status"></p>
+		</div>
+		
+	</div>
+	
+</div>

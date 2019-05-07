@@ -1,0 +1,40 @@
+<div id="login-div">
+
+	<link rel="stylesheet" type="text/css" href="css/form_styles.css">
+	
+	<div class="overlay"></div>
+	<div class="input-frame">
+	
+		<div id="top-color"></div>
+		<div id="mid-split"></div>
+		
+		<div id="signin">
+			<h4>Login</h4>
+			<form action="php/signin.php">
+				<input type="text" name="username" placeholder="username" required><br>
+				<input type="password" name="password" placeholder="password" required><br>
+				<input type="submit" value="Submit">
+			</form>
+			<br>
+			<button class="toggle" style="display:none;">Register</button>
+			<p class="status"></p>
+		</div>
+		
+		<div id="signup">
+			<h4>Register</h4>
+			<form action="php/signup.php">
+				<input type="text" name="username" placeholder="username" required><br>
+				<input type="password" name="password" placeholder="password" required><br>
+				<input type="password" name="repeat_password" placeholder="retype password" required><br>
+				<input type="submit" value="Submit">
+				<br>
+				<button class="toggle" style="display:none;">Login</button>
+				<p>Instead of using e-mail for verification, we will instead use your license plate number, which will be verified when you enter one of the many parking lots that use our services.</p>
+			</form>
+			<br>
+			<p class="status"></p>
+		</div>
+		
+	</div>
+	
+</div>

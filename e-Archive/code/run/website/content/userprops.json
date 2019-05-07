@@ -1,0 +1,8 @@
+{
+	"ccnum":{"label":"Credit Card Number","type":"ccnum"},
+	"lpnum":{"label":"License Plate Number","type":"lpnum"},
+	"eaddr":{"label":"E-mail Address","type":"email"},
+	"haddr":{"label":"Home Address","type":"text"},
+	"lname":{"label":"Last Name","type":"nonum"},
+	"fname":{"label":"First Name","type":"nonum"}
+}

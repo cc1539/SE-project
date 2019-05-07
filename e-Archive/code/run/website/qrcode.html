@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>QRCode Generator</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/qrcode.js"></script>
+		
+		<script type="text/javascript">
+			
+			function getParams() {
+				var params={};
+				location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){params[k]=v});
+				return params;
+			}
+			
+			function generateQRCode(param) {
+				$("#qrcode").empty();
+				var url = "https://inspark2019.000webhostapp.com/v2/";
+				if(param) {
+					url += "index.html?lpnum="+param;
+				}
+				new QRCode($("#qrcode")[0],url);
+			}
+			
+			$(function(){
+				
+				var params = getParams();
+				if(params['lpnum']) {
+					generateQRCode(params['lpnum']);
+				} else {
+					generateQRCode();
+				}
+				
+			});
+			
+			setInterval(function(){
+				$.ajax({
+					url: "php/qrcode.php",
+					method: "GET",
+					data: {
+						lot: "Hypothetical Parking Lot 2B"
+					},
+					success: function(response) {
+						console.log(response);
+						switch(response) {
+						case "no_cars_found":
+							
+						break;
+						case "get_failure":
+							console.log("SQL query failed");
+						break;
+						default:
+							generateQRCode(response);
+						break;
+						}
+					}
+				});
+			},1000);
+			
+		</script>
+		
+		<style type="text/css">
+		
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#qrcode {
+				width: 160px;
+				height: 160px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="qrcode"></div>
+	</body>
+</html>
